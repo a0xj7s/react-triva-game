@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import "./bootstrap.min.css";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<div id="app-outer" className="text-center">
 
 				<Switch>
@@ -18,7 +18,7 @@ function App() {
 				</Switch>
 		
 			</div>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
